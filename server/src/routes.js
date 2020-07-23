@@ -1,8 +1,11 @@
-import express from "express";
+const express = require("express");
 
 const routes = express.Router();
+const ProductController = require("./controllers/ProductController");
 
-routes.get("/", ProductController.index);
-routes.get("/product/:id", ProductController.show);
+const productController = new ProductController();
 
-export default routes;
+routes.get("/", productController.index);
+// routes.get("/product/:id", ProductController.show);
+
+module.exports = routes;

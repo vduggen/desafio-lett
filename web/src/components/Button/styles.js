@@ -1,0 +1,11 @@
+import styled from "styled-components";
+
+export const Container = styled.button`
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00e676;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+`;

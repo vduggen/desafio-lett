@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  padding: 32px 0;
   background-color: #000;
-  padding: 24px 32px;
+`;
+
+export const Content = styled.div`
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

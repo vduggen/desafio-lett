@@ -47,13 +47,6 @@ export const Group = styled.div`
 `;
 
 export const Photo = styled.div`
-  position: relative;
-
-  span {
-    position: absolute;
-    margin: 16px;
-  }
-
   img {
     width: 100%;
     border-radius: 4px;

@@ -33,6 +33,11 @@ export const Controll = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
 `;
 
 export const Photo = styled.div`
@@ -40,7 +45,7 @@ export const Photo = styled.div`
   height: 72px;
   border-radius: 4px;
 
-  background-image: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80");
+  background-image: url(${(props) => props.url});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

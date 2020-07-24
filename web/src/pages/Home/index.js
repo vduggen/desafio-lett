@@ -16,8 +16,6 @@ function Home() {
     });
   }, []);
 
-  console.log(products);
-
   return (
     <Container>
       <Navbar />

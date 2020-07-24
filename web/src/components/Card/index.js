@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Container, Photo, Infos, Group } from "./styles";
 
-import Button from "../Button";
+import { formatPrice } from "../../utils";
 
 function Card({ product }) {
   return (
@@ -19,10 +19,10 @@ function Card({ product }) {
         </Group>
 
         <Group>
-          <span>R$ {product.price}</span>
+          <span>{formatPrice(product.price)}</span>
 
           <Link to={`/product/${product.id}`}>
-            <Button value="Ver" />
+            <button>Ver</button>
           </Link>
         </Group>
       </Infos>

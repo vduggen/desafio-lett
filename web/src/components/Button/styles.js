@@ -9,4 +9,8 @@ export const Container = styled.button`
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+
+  :hover {
+    background-color: #11d799;
+  }
 `;

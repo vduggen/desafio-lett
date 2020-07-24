@@ -47,6 +47,17 @@ export const Group = styled.div`
     margin-top: 4px;
   }
 
+  button {
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00e676;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
   :last-child {
     margin-left: 16px;
   }

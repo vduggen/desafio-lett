@@ -22,4 +22,5 @@ export const Logo = styled.div`
 
 export const Nav = styled.div`
   text-align: right;
+  position: relative;
 `;

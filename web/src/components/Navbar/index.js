@@ -17,6 +17,7 @@ function Navbar() {
 
         <Nav>
           <Link to="/cart">
+            <span id="cart"></span>
             <FiShoppingCart color="#fff" size={32} />
           </Link>
         </Nav>

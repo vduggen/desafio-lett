@@ -28,18 +28,6 @@ export const Group = styled.div`
   }
 `;
 
-export const Controll = styled.div`
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  button {
-    background-color: transparent;
-    border: none;
-  }
-`;
-
 export const Photo = styled.div`
   width: 72px;
   height: 72px;

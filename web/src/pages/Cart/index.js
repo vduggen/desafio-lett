@@ -11,7 +11,6 @@ import { formatPrice } from "../../utils";
 
 function Cart() {
   const [products, setProducts] = useState([]);
-  const [size, setSize] = useState(0);
   const [subTotal, setSubTotal] = useState(0);
 
   const list = JSON.parse(localStorage.getItem("cart"));
@@ -21,14 +20,13 @@ function Cart() {
 
   useEffect(() => {
     setProducts(list);
-    setSize(sizeLocal);
-  }, [list, sizeLocal]);
+  }, []);
 
   let calculeSubTotal = 0;
 
   useEffect(() => {
     setSubTotal(calculeSubTotal);
-  }, [calculeSubTotal, size]);
+  }, []);
 
   function handleSubTotal() {
     return list
@@ -45,10 +43,9 @@ function Cart() {
 
   function handleCart() {
     alert("Compra finalizada, obrigada pela preferência!");
-    localStorage.removeItem("cart");
+    localStorage.clear();
     history.push("/");
     setProducts([]);
-    setSize(0);
   }
 
   return (

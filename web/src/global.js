@@ -22,14 +22,4 @@ export default createGlobalStyle`
     cursor:pointer;
   }
 
-  .active{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background-color: #ed161f;
-  }
-
 `;

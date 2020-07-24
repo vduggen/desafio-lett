@@ -14,12 +14,3 @@ export function formatPrice(price) {
     currency: "BRL",
   }).format(Number(price) / 100);
 }
-
-export function handleActive(state) {
-  const cartActive = document.querySelector("#cart");
-  if (state) {
-    cartActive.classList.add("active");
-  } else {
-    cartActive.classList.remove("active");
-  }
-}

@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import crypto from "crypto";
 
 import { Container, Content, Group, Photo } from "./styles";
 
 import Navbar from "../../components/Navbar";
 import Button from "../../components/Button";
+import List from "../../components/List";
 
 import api from "../../services/api";
-import { formatPrice, handleActive } from "../../utils";
+import { formatPrice } from "../../utils";
 
 function Product() {
   const [product, setProduct] = useState({});
 
   const { id } = useParams();
+
+  const hash = crypto.randomBytes(6).toString("hex");
 
   useEffect(() => {
     api.get(`/product/${id}`).then((response) => {
@@ -24,13 +28,16 @@ function Product() {
     const list = JSON.parse(localStorage.getItem("cart"));
 
     if (list === null) {
-      localStorage.setItem("cart", JSON.stringify([product]));
-      handleActive(true);
+      localStorage.setItem(
+        "cart",
+        JSON.stringify([{ ...product, cart_id: hash }])
+      );
+
       alert("O produto foi adicionado ao carrinho.");
     } else {
-      list.push(product);
+      list.push({ ...product, cart_id: hash });
       localStorage.setItem("cart", JSON.stringify(list));
-      handleActive(true);
+
       alert("O produto foi adicionado ao carrinho.");
     }
   }
@@ -47,9 +54,7 @@ function Product() {
           <span>by Lett Store</span>
 
           <h3>Especificações:</h3>
-          <ul>
-            <li>{product.description}</li>
-          </ul>
+          <List text={product.description} />
         </Group>
         <Group>
           <Group column>

@@ -6,6 +6,8 @@ import { Container, Photo, Infos, Group } from "./styles";
 import { formatPrice } from "../../utils";
 
 function Card({ product }) {
+  const shortDescription = product.description.split(",").slice(0, 3).join(",");
+
   return (
     <Container>
       <Photo>
@@ -15,7 +17,7 @@ function Card({ product }) {
       <Infos>
         <Group>
           <h2>{product.name}</h2>
-          <p>{product.description}</p>
+          <p>{shortDescription}</p>
         </Group>
 
         <Group>

@@ -44,12 +44,6 @@ export const Group = styled.div`
     font-weight: bold;
     margin-bottom: 4px;
   }
-
-  .link {
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-  }
 `;
 
 export const Photo = styled.div`

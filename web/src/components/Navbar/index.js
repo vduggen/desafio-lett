@@ -16,7 +16,9 @@ function Navbar() {
         </Logo>
 
         <Nav>
-          <FiShoppingCart color="#fff" size={32} />
+          <Link to="/cart">
+            <FiShoppingCart color="#fff" size={32} />
+          </Link>
         </Nav>
       </Content>
     </Container>

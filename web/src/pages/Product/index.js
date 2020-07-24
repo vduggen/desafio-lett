@@ -40,9 +40,8 @@ function Product() {
             <p>R$ 2129,99</p>
             <p>em até 12x sem juros</p>
           </Group>
-          <Link to="/cart" className="link">
-            <Button value="Comprar" />
-          </Link>
+
+          <Button value="Comprar" />
         </Group>
       </Content>
     </Container>

@@ -3,8 +3,8 @@
 <p align="center">Lett store é um e-commerce desenvolvido como desafio técnico</p>
 
 <p align="center">
- <a href="#layout">Layout</a> • 
  <a href="#aplicação">Aplicação</a> • 
+ <a href="#layout">Layout</a> • 
  <a href="#pré-requisitos">Pré-requisitos</a> • 
  <a href="#utilização">Utilização</a> •
  <a href="#endpoints">Endpoints</a> •
@@ -12,11 +12,7 @@
  <a href="#autor">Autor</a>
 </p>
 
-###  Layout
-
-[Figma](https://www.figma.com/file/B0UuzPbDI5T1XpYnCdPHXV/Lettstore?node-id=0%3A1)
-
-### 🎨 Aplicação
+### Aplicação
 
 #### Home
 <p align="center">
@@ -39,7 +35,11 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [PostgreSQL](https://www.postgresql.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 👩‍💻 Utilização
+###  Layout
+
+[Figma](https://www.figma.com/file/B0UuzPbDI5T1XpYnCdPHXV/Lettstore?node-id=0%3A1)
+
+### Utilização
 
 #### Clonando o repositório
 
@@ -93,13 +93,13 @@ $ yarn start
 # A aplicação inciará na porta:3000
 ```
 
-### 🔎 Endpoints
+### Endpoints
 
 - **GET**: `/` - Listagem dos productos
 - **GET**: `/products/:id` - Mostrar um produto específico
 
 
-### 🚀 Tecnologias
+### Tecnologias
 
 - [React](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
@@ -108,7 +108,7 @@ $ yarn start
 - [PostgreSQL](https://www.postgresql.org/)
 
 
-### 👩🏽‍🚀 Autor
+### Autor
 
 
   <img width="88" src="https://avatars1.githubusercontent.com/u/48728541?s=460&u=50a45fccecd761aebf1375e9e6236503e6782a13&v=4" />

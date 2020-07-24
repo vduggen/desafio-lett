@@ -29,7 +29,7 @@
   <img src="https://user-images.githubusercontent.com/48728541/88441616-fa60aa80-cde7-11ea-8ff0-2d915310bd11.png" />
 </p>
 
-### ⚙️ Pré-requisitos
+### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [PostgreSQL](https://www.postgresql.org/). 

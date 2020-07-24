@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Container, Photo, Infos, Group } from "./styles";
 
 import Button from "../Button";
 
-function Card() {
+function Card({ id }) {
   return (
     <Container>
       <Photo>
@@ -23,7 +24,9 @@ function Card() {
         <Group>
           <span>R$ 2129,99</span>
 
-          <Button value="Ver" />
+          <Link to={`/product/${id}`}>
+            <Button value="Ver" />
+          </Link>
         </Group>
       </Infos>
     </Container>

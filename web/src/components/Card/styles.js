@@ -46,4 +46,8 @@ export const Group = styled.div`
     font-size: 18px;
     margin-top: 4px;
   }
+
+  :last-child {
+    margin-left: 16px;
+  }
 `;

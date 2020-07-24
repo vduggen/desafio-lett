@@ -19,9 +19,9 @@ function Home() {
       </Banner>
 
       <Cards>
-        <Card />
-        <Card />
-        <Card />
+        <Card id="1" />
+        <Card id="2" />
+        <Card id="3" />
       </Cards>
     </Container>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiHeart } from "react-icons/fi";
 
 import { Container, Content, Group, Photo } from "./styles";
@@ -39,8 +40,9 @@ function Product() {
             <p>R$ 2129,99</p>
             <p>em até 12x sem juros</p>
           </Group>
-
-          <Button value="Comprar" />
+          <Link to="/cart" className="link">
+            <Button value="Comprar" />
+          </Link>
         </Group>
       </Content>
     </Container>

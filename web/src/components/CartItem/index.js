@@ -2,7 +2,6 @@ import React from "react";
 import { FiTrash2 } from "react-icons/fi";
 
 import { Container, Content, Group, Photo, Controll } from "./styles";
-import Button from "../Button";
 
 function CartItem() {
   return (

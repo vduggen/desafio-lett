@@ -5,26 +5,23 @@ import { Container, Photo, Infos, Group } from "./styles";
 
 import Button from "../Button";
 
-function Card({ id }) {
+function Card({ product }) {
   return (
     <Container>
       <Photo>
-        <img
-          src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80"
-          alt=""
-        />
+        <img src={product.image_url} alt="" />
       </Photo>
 
       <Infos>
         <Group>
-          <h2>Notebook Asus</h2>
-          <p>Intel core i3, 1Tb de HD, 4Gb de RAM e placa de video dedicada.</p>
+          <h2>{product.name}</h2>
+          <p>{product.description}</p>
         </Group>
 
         <Group>
-          <span>R$ 2129,99</span>
+          <span>R$ {product.price}</span>
 
-          <Link to={`/product/${id}`}>
+          <Link to={`/product/${product.id}`}>
             <Button value="Ver" />
           </Link>
         </Group>

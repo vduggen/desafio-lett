@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Container, Banner, Text, Cards } from "./styles";
 
 import Navbar from "../../components/Navbar";
 import Card from "../../components/Card";
 
+import api from "../../services/api";
+
 function Home() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    api.get("/").then((response) => {
+      setProducts(response.data.products);
+    });
+  }, []);
+
+  console.log(products);
+
   return (
     <Container>
       <Navbar />
@@ -19,9 +31,9 @@ function Home() {
       </Banner>
 
       <Cards>
-        <Card id="1" />
-        <Card id="2" />
-        <Card id="3" />
+        {products.map((product) => (
+          <Card product={product} key={product.id} />
+        ))}
       </Cards>
     </Container>
   );
